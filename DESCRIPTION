@@ -11,4 +11,4 @@ Description: Extract CANSIM (Statistics Canada) tables and transform them into r
 License: GPL-3
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2017-10-21 16:50:58 UTC; ML
+Packaged: 2017-10-21 22:11:15 UTC; ML
