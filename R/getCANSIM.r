@@ -17,7 +17,7 @@
 #' getCANSIM("23-10-0238", raw = TRUE)
 #' getCANSIM("23100238")
 #' @export
-getCANSIM <- function(cansimTableNumber, showLabels = TRUE, raw = FALSE){
+getCANSIM <- function(cansimTableNumber='', showLabels = TRUE, raw = FALSE){
   df <- downloadCANSIM(cansimTableNumber, raw)
   # temporary fix, several local and remote tests confirm that download works but CRAN server fails to connect
   # to StatCan website. This fix needs to be reviewed shortly
