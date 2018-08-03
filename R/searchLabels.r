@@ -14,6 +14,10 @@
 #' searchLabels(df, "imports")
 #' @export
 searchLabels <- function(df, pattern = ''){
+  if(is.null(df)){
+    print("Please feed a dataframe created with the getCANSIM function.")
+    return()
+  }
   for(i in 1:ncol(df)){
     if(grepl(pattern, label(df[[i]]), ignore.case = TRUE)){
       resultString = paste(colnames(df)[i], '-', label(df[[i]]))
